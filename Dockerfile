@@ -2,7 +2,6 @@
 # OpenResty docker image on ARM
 #
 
-#FROM debian:jessie
 FROM resin/rpi-raspbian
 
 MAINTAINER Pahud Hsieh <pahudnet@gmail.com>
