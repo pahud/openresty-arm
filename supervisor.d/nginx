@@ -1,6 +1,6 @@
 [program:nginx]
 command=/opt/nginx/sbin/nginx -g "daemon off;"
-stdout_logfile=/var/log/supervisor/%(program_name).log
-stderr_logfile=/var/log/supervisor/%(program_name).log
+stdout_logfile=/var/log/supervisor/%(program_name)s.log
+stderr_logfile=/var/log/supervisor/%(program_name)s.log
 autorestart=true
 #user=nobody
