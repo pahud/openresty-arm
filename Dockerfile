@@ -59,7 +59,8 @@ WORKDIR /opt/openresty
 # Add files to the container.
 #ADD . /opt/openresty
 #ADD nginx-conf /opt/nginx/conf
-#ADD supervisor.d /etc/supervisor/conf.d
+ADD supervisor.d /etc/supervisor/conf.d
+RUN sed -ie 's/worker_processes.*/worker_processes 4;/g'  /opt/nginx/conf/nginx.conf
 
 # Expose volumes.
 #VOLUME ["/etc/nginx"]
